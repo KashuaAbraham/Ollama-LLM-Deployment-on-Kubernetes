@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ollama-service
+spec:
+  selector:
+    app: ollama
+  ports:
+    - protocol: TCP
+      port: 80           # Port exposed internally within the cluster
+      targetPort: 11434   # Port the container is listening on
+      nodePort: 31000    # Specific NodePort to expose the service externally
+  type: NodePort

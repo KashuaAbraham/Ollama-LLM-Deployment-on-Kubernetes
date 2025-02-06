@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: ollama-container
-        image: ollama/ollama:0.5.8-rc7  # Replace with the actual Ollama image
+        image: ollama/ollama:0.5.8-rc7  
         ports:
-        - containerPort: 11434  # Replace with the actual port Ollama uses
+        - containerPort: 11434  
         resources:
           requests:
             memory: "256Mi"  # Request 256 MiB of memory
