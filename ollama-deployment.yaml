@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ollama-container
-        image:  alpine/ollama:llama3.2 
+        image:  ollama/ollama:0.5.8-rc11-rocm
         ports:
         - containerPort: 11434  
         resources:
